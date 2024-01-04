@@ -24,6 +24,8 @@
   }
 }
 .altura {
+  display: flex;
+  justify-content: center;
   height: 80px;
   width: 230px;
 }
@@ -235,11 +237,19 @@ a {
   }
 }
 @media only screen and (max-width: 389px) {
-  ul button {
-    width: 90px;
+  * {
+    font-size: 10px;
   }
-  nav .menujobs {
-    width: 70px;
+  .bg {
+    width: 200px;
+    flex-wrap: nowrap;
+  }
+  .bg button {
+    width: 100px;
+  }
+  .tamaño li button {
+    padding: 0;
+    font-size: 12px;
   }
   nav .menujobs img {
     width: 30px;
@@ -264,6 +274,18 @@ a {
 
 .bg-nuevo {
   background-color: rgba(150, 151, 152, 0.3960784314);
+}
+
+.navbar {
+  padding: 0 !important;
+}
+
+.color {
+  color: #0CB463;
+}
+
+.menujobs img {
+  width: 48px;
 }
 
 /*!
