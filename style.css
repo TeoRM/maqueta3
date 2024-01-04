@@ -73,10 +73,10 @@
           backdrop-filter: blur(5px);
 }
 
-.botonAtras {
+.botonAtras2 {
   position: absolute;
   width: 3%;
-  top: 30px;
+  top: 25px;
   left: 30px;
 }
 
