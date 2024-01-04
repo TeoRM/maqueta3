@@ -116,3 +116,35 @@ function quitarClase8() {
     elemento6.classList.add("show");
 }
 
+function agregarTarea() {
+    // Obtener el elemento por su ID
+    var elemento = document.getElementById("visible");
+    var elemento2 = document.getElementById("visible2");
+    var elemento3 = document.getElementById("visible3");
+    var elemento4 = document.getElementById("visible4");
+
+    // Quitar la clase del elemento
+    elemento.classList.remove("visible");
+    elemento2.classList.remove("visible");
+    elemento3.classList.add("visible");
+    elemento4.classList.remove("visible");
+}
+
+const imagen = document.querySelector("#imagen");
+const vistaPrevia = document.querySelector("#vista_previa");
+
+imagen.addEventListener("change", () => {
+    const archivo = imagen.files[0];
+
+    if (archivo) {
+        const reader = new FileReader();
+
+        reader.onload = () => {
+            vistaPrevia.src = reader.result;
+        };
+
+        reader.readAsDataURL(archivo);
+    }
+});
+
+

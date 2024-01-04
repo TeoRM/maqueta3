@@ -204,7 +204,7 @@ footer img {
 }
 
 .visible {
-  display: none;
+  display: none !important;
 }
 
 a {
@@ -218,8 +218,52 @@ a {
 }
 
 .botonSend {
-  padding: 10px 100px 10px 100px;
+  padding: 10px 100px 10px 100px !important;
   border: none;
+}
+
+@media only screen and (max-width: 415px) {
+  * {
+    font-size: 15px;
+  }
+  .bg {
+    width: 300px;
+    flex-wrap: nowrap;
+  }
+  .bg button {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 389px) {
+  ul button {
+    width: 90px;
+  }
+  nav .menujobs {
+    width: 70px;
+  }
+  nav .menujobs img {
+    width: 30px;
+  }
+}
+.color-verde {
+  border-radius: 50% !important;
+  border: 1px solid rgba(0, 0, 0, 0.418) !important;
+}
+
+.color-verde:checked {
+  background-color: green !important;
+}
+
+.contenedorTareas {
+  background-color: rgba(147, 147, 147, 0.1960784314);
+}
+
+.job {
+  background-color: #0CC76D !important;
+}
+
+.bg-nuevo {
+  background-color: rgba(150, 151, 152, 0.3960784314);
 }
 
 /*!
