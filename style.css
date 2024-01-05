@@ -226,7 +226,7 @@ a {
 
 @media only screen and (max-width: 415px) {
   * {
-    font-size: 15px;
+    font-size: 13px;
   }
   .bg {
     width: 300px;
@@ -238,7 +238,7 @@ a {
 }
 @media only screen and (max-width: 389px) {
   * {
-    font-size: 10px;
+    font-size: 10px !important;
   }
   .bg {
     width: 200px;
